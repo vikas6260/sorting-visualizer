@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sorting Visualiser</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Sorting Visualiser</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item mx-5 my-1">
+            <button class="nav-link NavText bg-dark" aria-current="page" id="NewArray">New Array</button>
+          </li>
+          <li class="nav-item mx-5 my-1 NavText">
+            <div>
+              <div class="">Size Of Array</div>
+              <div><input type="range" min="5" max="100" value="50" id="arrSize"></div>
+            </div>
+
+          </li>
+          <li class="nav-item mx-5 my-1 NavText">
+            <div>
+              <div>Speed Of Algorithm</div>
+              <div><input type="range" min="0" max="960" value="300" id="arrSpeed"></div>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown mx-5 my-1">
+            <a class="nav-link dropdown-toggle NavText" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Select Algorithm
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item algo" id="BubbleSort">Bubble Sort</a></li>
+              <li><a class="dropdown-item algo" id="InsertionSort">Insertion Sort</a></li>
+              <li><a class="dropdown-item algo" id="SelectionSort">Selection Sort</a></li>
+              <li><a class="dropdown-item algo" id="MergeSort">Merge Sort</a></li>
+              <li><a class="dropdown-item algo" id="QuickSort">Quick Sort</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <br>
+  <div class="flex-container" id="bars"></div>
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+  <script src="js/index.js"></script>
+  <script src="js/bubbleSort.js"></script>
+  <script src="js/insertionSort.js"></script>
+  <script src="js/selectionSort.js"></script>
+  <script src="js/mergeSort.js"></script>
+  <script src="js/quickSort.js"></script>
+</body>
+
+</html>
